@@ -16,4 +16,5 @@ props.each { prop ->
     tokenArtifactMap = [
             '@@CODE_URI@@': "${project.buildDir.absolutePath}${File.separator}libs${File.separator}${project.getName()}.jar"
     ]
+    logStackOutputs = true
 }

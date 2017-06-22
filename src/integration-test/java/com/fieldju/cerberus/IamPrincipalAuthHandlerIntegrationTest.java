@@ -3,13 +3,13 @@ package com.fieldju.cerberus;
 import org.junit.Before;
 import org.junit.Test;
 
-public class HandlerIntegrationTest {
+public class IamPrincipalAuthHandlerIntegrationTest {
 
-    private Handler handler;
+    private IamPrincipalAuthHandler handler;
 
     @Before
     public void before() {
-        handler = new Handler();
+        handler = new IamPrincipalAuthHandler();
     }
 
     @Test
