@@ -1,4 +1,4 @@
-package com.fieldju.java;
+package com.fieldju.cerberus;
 
 import org.apache.log4j.Logger;
 

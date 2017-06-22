@@ -1,46 +1,14 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
-Description: JVM Template Lambda Functions
+Description: CF for serverless Cerberus POC
 Resources:
   JavaLambdaFunction:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: >-
-         com.fieldju.java.Handler::handle
+         com.fieldju.cerberus.Handler::handle
       Runtime: java8
       Description: Java Lambda Function
-      MemorySize: 512
-      Timeout: 300
-      CodeUri: @@CODE_URI@@
-      Role: !GetAtt LambdaRole.Arn
-      Environment:
-        Variables:
-          ROLE_NAME: !Ref LambdaRole
-          ACCOUNT_ID: !Ref AWS::AccountId
-          REGION: !Ref AWS::Region
-  GroovyLambdaFunction:
-    Type: 'AWS::Serverless::Function'
-    Properties:
-      Handler: >-
-         com.fieldju.groovy.Handler::handle
-      Runtime: java8
-      Description: Groovy Lambda Function
-      MemorySize: 512
-      Timeout: 300
-      CodeUri: @@CODE_URI@@
-      Role: !GetAtt LambdaRole.Arn
-      Environment:
-        Variables:
-          ROLE_NAME: !Ref LambdaRole
-          ACCOUNT_ID: !Ref AWS::AccountId
-          REGION: !Ref AWS::Region
-  ScalaLambdaFunction:
-    Type: 'AWS::Serverless::Function'
-    Properties:
-      Handler: >-
-         com.fieldju.scala.Handler::handle
-      Runtime: java8
-      Description: Scala Lambda Function
       MemorySize: 512
       Timeout: 300
       CodeUri: @@CODE_URI@@

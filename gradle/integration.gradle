@@ -1,19 +1,9 @@
 sourceSets {
     integrationTest {
-        groovy {
-            compileClasspath += main.output + test.output
-            runtimeClasspath += main.output + test.output
-            srcDir file('src/integration-test/groovy')
-        }
         java {
             compileClasspath += main.output + test.output
             runtimeClasspath += main.output + test.output
-            srcDir file('src/integration-test/java')
-        }
-        scala {
-            compileClasspath += main.output + test.output
-            runtimeClasspath += main.output + test.output
-            srcDir file('src/integration-test/scala')
+            srcDir file('src/integration-test/cerberus')
         }
         resources.srcDir file('src/integration-test/resources')
     }

@@ -100,4 +100,6 @@ hs_err_pid*
 ### intellij template is less than ideal so I will make my own
 .idea
 # see how easy that was
+
 /profile/development.properties
+/profile/dev.properties

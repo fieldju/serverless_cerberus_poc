@@ -1,9 +1,9 @@
-package com.fieldju.java;
+package com.fieldju.cerberus;
 
 import org.junit.Before;
 import org.junit.Test;
 
-public class HandlerTest {
+public class HandlerIntegrationTest {
 
     private Handler handler;
 
